@@ -1,0 +1,61 @@
+test_telegram_polling_sqlite_and_restart (lab.test_integration.LoopbackTests.test_telegram_polling_sqlite_and_restart) ... worker log:
+2026-11-21 06:05:21,217 INFO kro_geoip: Starting Kro GeoIP polling worker
+2026-11-21 06:05:21,283 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getMe "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,290 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/deleteWebhook "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,291 INFO telegram.ext.Application: Application started
+2026-11-21 06:05:21,356 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,363 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,426 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,433 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,496 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,502 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/answerCallbackQuery "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,509 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/editMessageText "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,519 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/answerCallbackQuery "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,526 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/editMessageText "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,566 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,575 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,637 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,644 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,708 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,716 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,724 INFO httpx: HTTP Request: GET https://127.0.0.1:34371/players/20000 "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,735 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/editMessageText "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,781 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,787 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/answerCallbackQuery "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,794 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/editMessageText "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,801 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,851 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,857 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,920 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,926 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,989 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"
+2026-11-21 06:05:21,997 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/answerCallbackQuery "HTTP/1.0 200 OK"
+2026-11-21 06:05:22,003 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/editMessageText "HTTP/1.0 200 OK"
+2026-11-21 06:05:22,008 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"
+2026-11-21 06:05:22,014 INFO httpx: HTTP Request: GET https://127.0.0.1:34371/players/20001 "HTTP/1.0 200 OK"
+2026-11-21 06:05:22,024 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/editMessageText "HTTP/1.0 200 OK"
+2026-11-21 06:05:22,060 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"
+2026-11-21 06:05:22,068 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"
+2026-11-21 06:05:22,135 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"
+2026-11-21 06:05:22,136 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-11-21 06:05:22,136 INFO telegram.ext.Application: Application.stop() complete
+
+FAIL
+
+======================================================================
+FAIL: test_telegram_polling_sqlite_and_restart (lab.test_integration.LoopbackTests.test_telegram_polling_sqlite_and_restart)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tmp.7kdI6XNI3C/KroGeoIP/lab/test_integration.py", line 175, in test_telegram_polling_sqlite_and_restart
+    with self.worker(db_path) as process:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "/tmp/tmp.7kdI6XNI3C/KroGeoIP/lab/test_integration.py", line 142, in worker
+    self.assertNotIn(BOT_TOKEN, output)
+AssertionError: '[lab bot]' unexpectedly found in '2026-11-21 06:05:21,217 INFO kro_geoip: Starting Kro GeoIP polling worker\n2026-11-21 06:05:21,283 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getMe "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,290 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/deleteWebhook "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,291 INFO telegram.ext.Application: Application started\n2026-11-21 06:05:21,356 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,363 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,426 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,433 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,496 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,502 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/answerCallbackQuery "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,509 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/editMessageText "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,519 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/answerCallbackQuery "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,526 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/editMessageText "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,566 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,575 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,637 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,644 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,708 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,716 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,724 INFO httpx: HTTP Request: GET https://127.0.0.1:34371/players/20000 "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,735 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/editMessageText "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,781 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,787 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/answerCallbackQuery "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,794 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/editMessageText "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,801 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,851 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,857 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,920 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,926 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,989 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"\n2026-11-21 06:05:21,997 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/answerCallbackQuery "HTTP/1.0 200 OK"\n2026-11-21 06:05:22,003 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/editMessageText "HTTP/1.0 200 OK"\n2026-11-21 06:05:22,008 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"\n2026-11-21 06:05:22,014 INFO httpx: HTTP Request: GET https://127.0.0.1:34371/players/20001 "HTTP/1.0 200 OK"\n2026-11-21 06:05:22,024 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/editMessageText "HTTP/1.0 200 OK"\n2026-11-21 06:05:22,060 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"\n2026-11-21 06:05:22,068 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/sendMessage "HTTP/1.0 200 OK"\n2026-11-21 06:05:22,135 INFO httpx: HTTP Request: POST https://127.0.0.1:34371/bot[lab bot]/getUpdates "HTTP/1.0 200 OK"\n2026-11-21 06:05:22,136 INFO telegram.ext.Application: Application is stopping. This might take a moment.\n2026-11-21 06:05:22,136 INFO telegram.ext.Application: Application.stop() complete\n'
+
+----------------------------------------------------------------------
+Ran 1 test in 1.883s
+
+FAILED (failures=1)

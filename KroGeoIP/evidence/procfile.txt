@@ -1,0 +1,8 @@
+Procfile command = python main.py
+Traceback (most recent call last):
+  File "/workspace/KroGeoIP/main.py", line 332, in <module>
+    main()
+  File "/workspace/KroGeoIP/main.py", line 314, in main
+    raise RuntimeError('BOT_TOKEN is required')
+RuntimeError: BOT_TOKEN is required
+exit = 1

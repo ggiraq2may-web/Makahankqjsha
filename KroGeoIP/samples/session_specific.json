@@ -1,0 +1,8 @@
+{
+  "sku": "DEMO_UC60",
+  "observations": [
+    {"phase":"before","session":"A","independently_started":false,"shop_country":"AE","currency":"USD","price":"0.99"},
+    {"phase":"after","session":"A","independently_started":false,"shop_country":"TR","currency":"TRY","price":"49.99"},
+    {"phase":"after","session":"B","independently_started":true,"shop_country":"AE","currency":"USD","price":"0.99"}
+  ]
+}

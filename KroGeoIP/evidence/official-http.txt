@@ -1,0 +1,15 @@
+2026-11-21T06:07:37.772834+00:00
+store-A GET https://www.midasbuy.com/midasbuy/tr/buy/pubgm
+code=200 type=text/html; charset=utf-8 bytes=60979 TLS_verify=0
+sha256=3fb7427a8d22f3579d3ee088a8e22fd22ff54e1386d877c6fe2820d6f5540b72
+title=PUBG Mobile UC Türkiye | %10’a varan indirim veya VIP üyeler için %7’ye varan ekstra UC | Midasbuy
+store-B GET https://www.midasbuy.com/midasbuy/tr/buy/pubgm
+code=200 type=text/html; charset=utf-8 bytes=60979 TLS_verify=0
+sha256=232918d4f66d11d5f7b5683dda50632a43b1a79b53540cc7b5d3fbc27e1ac4d3
+title=PUBG Mobile UC Türkiye | %10’a varan indirim veya VIP üyeler için %7’ye varan ekstra UC | Midasbuy
+glossary GET https://developer.midasbuy.com/guide/integration/glossary
+code=403 type=application/xml bytes=428 TLS_verify=0
+orders-doc GET https://developer.midasbuy.com/api/apis/orders-api
+code=403 type=application/xml bytes=425 TLS_verify=0
+trade-sdk GET https://cdn.midasbuy.com/js/trade.stable.js
+code=200 type=application/javascript bytes=15013 TLS_verify=0

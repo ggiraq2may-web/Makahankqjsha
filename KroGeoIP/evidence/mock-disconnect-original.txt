@@ -1,0 +1,4 @@
+35:Ran 30 tests in 1.727s
+64:  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/socketserver.py", line 697, in process_request_thread
+91:BrokenPipeError: [Errno 32] Broken pipe
+102:Ran 3 tests in 3.515s

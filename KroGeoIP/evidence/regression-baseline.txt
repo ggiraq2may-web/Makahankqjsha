@@ -1,0 +1,6 @@
+invalid phase TypeError
+missing baseline price SESSION_ONLY_CHANGE_OBSERVED ['DISPLAY_OR_PRICE_CHANGED_WITHIN_SESSION', 'TURKISH_STORE_AND_CURRENCY_OBSERVED']
+independent price conflict CROSS_SESSION_DISPLAY_OBSERVED ['SEPARATE_SESSION_OBSERVATION_RECORDED', 'TURKISH_STORE_AND_CURRENCY_OBSERVED', 'TURKISH_DISPLAY_REPEATED_ACROSS_SESSIONS']
+injected client redirect {'status': 'LOOKUP_SUCCESS', 'nickname': 'synthetic', 'player_region': None} ['fixed.example', 'other.example']
+original clamp of NaN: nan
+variable host accepted: https://{player_id}.example.invalid/path

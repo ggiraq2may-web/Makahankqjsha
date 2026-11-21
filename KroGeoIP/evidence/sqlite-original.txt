@@ -1,0 +1,66 @@
+test_parallel_first_writes_create_complete_audit_pairs (test_regressions.SQLiteTests.test_parallel_first_writes_create_complete_audit_pairs) ... 
+  test_parallel_first_writes_create_complete_audit_pairs (test_regressions.SQLiteTests.test_parallel_first_writes_create_complete_audit_pairs) (trial=1) ... ERROR
+  test_parallel_first_writes_create_complete_audit_pairs (test_regressions.SQLiteTests.test_parallel_first_writes_create_complete_audit_pairs) (trial=5) ... ERROR
+
+======================================================================
+ERROR: test_parallel_first_writes_create_complete_audit_pairs (test_regressions.SQLiteTests.test_parallel_first_writes_create_complete_audit_pairs) (trial=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tmpg0k9y40b/KroGeoIP/test_regressions.py", line 99, in test_parallel_first_writes_create_complete_audit_pairs
+    list(pool.map(write, range(12)))
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/tmpg0k9y40b/KroGeoIP/test_regressions.py", line 97, in write
+    main.record(index, "12345", {"status": "LOOKUP_SUCCESS"})
+  File "/tmp/tmpg0k9y40b/KroGeoIP/main.py", line 61, in record
+    with connect() as conn:
+         ^^^^^^^^^
+  File "/tmp/tmpg0k9y40b/KroGeoIP/main.py", line 52, in connect
+    conn.execute('ALTER TABLE operations ADD COLUMN lookup_id INTEGER')
+sqlite3.OperationalError: duplicate column name: lookup_id
+
+======================================================================
+ERROR: test_parallel_first_writes_create_complete_audit_pairs (test_regressions.SQLiteTests.test_parallel_first_writes_create_complete_audit_pairs) (trial=5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tmpg0k9y40b/KroGeoIP/test_regressions.py", line 99, in test_parallel_first_writes_create_complete_audit_pairs
+    list(pool.map(write, range(12)))
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/tmpg0k9y40b/KroGeoIP/test_regressions.py", line 97, in write
+    main.record(index, "12345", {"status": "LOOKUP_SUCCESS"})
+  File "/tmp/tmpg0k9y40b/KroGeoIP/main.py", line 61, in record
+    with connect() as conn:
+         ^^^^^^^^^
+  File "/tmp/tmpg0k9y40b/KroGeoIP/main.py", line 52, in connect
+    conn.execute('ALTER TABLE operations ADD COLUMN lookup_id INTEGER')
+sqlite3.OperationalError: duplicate column name: lookup_id
+
+----------------------------------------------------------------------
+Ran 1 test in 0.650s
+
+FAILED (errors=2)

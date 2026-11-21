@@ -1,0 +1,114 @@
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+test_bad_id_cannot_enter_provider (test_main.AdditionalProviderTests.test_bad_id_cannot_enter_provider) ... ok
+test_mocked_telegram_user_flow_keeps_false_claims_off (test_main.AdditionalProviderTests.test_mocked_telegram_user_flow_keeps_false_claims_off) ... ok
+test_provider_timeout_exception (test_main.AdditionalProviderTests.test_provider_timeout_exception) ... ok
+test_provider_valid_name_and_region (test_main.AdditionalProviderTests.test_provider_valid_name_and_region) ... ok
+test_unauthorized_not_found_redirect_server_and_invalid (test_main.AdditionalProviderTests.test_unauthorized_not_found_redirect_server_and_invalid) ... ok
+test_unconfigured_provider (test_main.AdditionalProviderTests.test_unconfigured_provider) ... ok
+test_backward_compatible_db_migration (test_main.KroTests.test_backward_compatible_db_migration) ... ok
+test_history_has_no_fake_success (test_main.KroTests.test_history_has_no_fake_success) ... ok
+test_official_shop_link (test_main.KroTests.test_official_shop_link) ... ok
+test_player_id_validation (test_main.KroTests.test_player_id_validation) ... ok
+test_provider_config (test_main.KroTests.test_provider_config) ... ok
+test_provider_mock_and_rate_limit (test_main.KroTests.test_provider_mock_and_rate_limit) ... ok
+test_bad_price_and_metadata_rejected (test_region_lab.EvidenceEdgeCases.test_bad_price_and_metadata_rejected) ... ok
+test_one_after_session_not_repeated (test_region_lab.EvidenceEdgeCases.test_one_after_session_not_repeated)
+Regression: a single independent after session was mislabeled repeated. ... ok
+test_same_named_session_cannot_look_like_two_sessions (test_region_lab.EvidenceEdgeCases.test_same_named_session_cannot_look_like_two_sessions) ... ok
+test_unknown_eligibility_stays_unverified (test_region_lab.EvidenceEdgeCases.test_unknown_eligibility_stays_unverified) ... ok
+test_cross_session_still_not_server_proof (test_region_lab.RegionLabTests.test_cross_session_still_not_server_proof) ... ok
+test_invalid_evidence (test_region_lab.RegionLabTests.test_invalid_evidence) ... ok
+test_never_reports_purchase_eligibility_as_verified (test_region_lab.RegionLabTests.test_never_reports_purchase_eligibility_as_verified) ... ok
+test_only_one_session_is_not_a_verification (test_region_lab.RegionLabTests.test_only_one_session_is_not_a_verification) ... ok
+test_session_only_discrepancy (test_region_lab.RegionLabTests.test_session_only_discrepancy) ... ok
+test_turkey_label_other_currency (test_region_lab.RegionLabTests.test_turkey_label_other_currency) ... ok
+test_lookup_host_is_fixed_and_request_has_valid_port (test_regressions.ConfigTests.test_lookup_host_is_fixed_and_request_has_valid_port) ... ok
+test_timeout_is_finite_before_clamping (test_regressions.ConfigTests.test_timeout_is_finite_before_clamping) ... ok
+test_malformed_metadata_is_reported_as_invalid_input (test_regressions.EvidenceTests.test_malformed_metadata_is_reported_as_invalid_input) ... ok
+test_missing_before_price_does_not_imply_a_change (test_regressions.EvidenceTests.test_missing_before_price_does_not_imply_a_change) ... ok
+test_same_currency_price_discrepancy_across_sessions (test_regressions.EvidenceTests.test_same_currency_price_discrepancy_across_sessions) ... ok
+test_two_independent_sessions_can_disagree_on_price (test_regressions.EvidenceTests.test_two_independent_sessions_can_disagree_on_price) ... ok
+test_audit_insert_error_rolls_back_lookup (test_regressions.SQLiteTests.test_audit_insert_error_rolls_back_lookup) ... ok
+test_parallel_first_writes_create_complete_audit_pairs (test_regressions.SQLiteTests.test_parallel_first_writes_create_complete_audit_pairs) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 1.661s
+
+OK
+test_provider_protocol_and_timeout (lab.test_integration.LoopbackTests.test_provider_protocol_and_timeout) ... provider 10002 PROVIDER_UNAUTHORIZED
+provider 10003 PLAYER_NOT_FOUND
+provider 10004 PROVIDER_FAILED
+provider 10005 INVALID_RESPONSE
+provider 10006 PROVIDER_FAILED
+provider 10007 PROVIDER_REDIRECT_REJECTED
+provider 10009 LOOKUP_SUCCESS
+provider 10009 RATE_LIMITED
+actual HTTPS read deadline: 1.008s
+provider scenario elapsed: 1.130s
+HTTPS provider trace [{"method": "GET", "path": "/players/10000", "status": 200}, {"method": "GET", "path": "/players/10001", "status": 200}, {"method": "GET", "path": "/players/10002", "status": 403}, {"method": "GET", "path": "/players/10003", "status": 404}, {"method": "GET", "path": "/players/10004", "status": 503}, {"method": "GET", "path": "/players/10005", "status": 200}, {"method": "GET", "path": "/players/10006", "status": 200}, {"method": "GET", "path": "/players/10007", "status": 302}, {"method": "GET", "path": "/players/10009", "status": 200}, {"method": "GET", "path": "/players/10009", "status": 429}, {"method": "GET", "path": "/players/10000", "status": 401}, {"method": "GET", "path": "/players/abc", "status": 400}, {"method": "GET", "path": "/players/10009", "status": 429}]
+ok
+test_storefront_sessions (lab.test_integration.LoopbackTests.test_storefront_sessions) ... synthetic storefront {"sku": "DEMO_UC60", "observations": [{"shop_country": "AE", "currency": "AED", "price": "3.99", "phase": "before", "session": "A", "independently_started": false}, {"shop_country": "TR", "currency": "TRY", "price": "49.99", "phase": "after", "session": "A", "independently_started": false}, {"shop_country": "AE", "currency": "AED", "price": "3.99", "phase": "after", "session": "B", "independently_started": true}]} SESSION_SPECIFIC_RESULT
+synthetic storefront {"sku": "DEMO_UC60", "observations": [{"shop_country": "AE", "currency": "AED", "price": "3.99", "phase": "before", "session": "A", "independently_started": false}, {"shop_country": "TR", "currency": "TRY", "price": "49.99", "phase": "after", "session": "A", "independently_started": false}, {"shop_country": "TR", "currency": "TRY", "price": "49.99", "phase": "after", "session": "B", "independently_started": true}]} CROSS_SESSION_DISPLAY_OBSERVED
+ok
+test_telegram_polling_sqlite_and_restart (lab.test_integration.LoopbackTests.test_telegram_polling_sqlite_and_restart) ... worker log:
+2026-11-21 06:10:07,684 INFO kro_geoip: Starting Kro GeoIP polling worker
+2026-11-21 06:10:07,759 INFO telegram.ext.Application: Application started
+2026-11-21 06:10:08,649 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-11-21 06:10:08,650 INFO telegram.ext.Application: Application.stop() complete
+
+SQLite linked audit rows after SIGTERM [(201, '20000', 'LOOKUP_SUCCESS', None, 'NOT_PERFORMED', 'UNVERIFIED', None), (202, '20001', 'LOOKUP_SUCCESS', None, 'NOT_PERFORMED', 'UNVERIFIED', None)]
+history after restart 20000 | LOOKUP_SUCCESS | NOT_PERFORMED/UNVERIFIED | 2026-11-21T06:10:08
+worker log:
+2026-11-21 06:10:09,086 INFO kro_geoip: Starting Kro GeoIP polling worker
+2026-11-21 06:10:09,130 INFO telegram.ext.Application: Application started
+2026-11-21 06:10:09,280 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-11-21 06:10:09,280 INFO telegram.ext.Application: Application.stop() complete
+
+ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 3.711s
+
+OK
+{
+  "sku": "DEMO_UC60",
+  "sessions_observed": [
+    "A",
+    "B"
+  ],
+  "classification": "SESSION_SPECIFIC_RESULT",
+  "evidence": [
+    "DISPLAY_OR_PRICE_CHANGED_WITHIN_SESSION",
+    "SEPARATE_SESSION_OBSERVATION_RECORDED",
+    "TURKISH_STORE_AND_CURRENCY_OBSERVED",
+    "SESSION_DEPENDENT_RESULT_OBSERVED"
+  ],
+  "limitations": [
+    "هذه ملاحظات يدوّنها المستخدم، وليست إثباتاً من API مستقل.",
+    "توافق العملة والسعر لا يثبت تعديل user_region أو قبول الدفع."
+  ],
+  "user_region_mutation_verified": false,
+  "turkish_purchase_eligibility_verified": false,
+  "operation_performed": false
+}
+{
+  "sku": "DEMO_UC60",
+  "sessions_observed": [
+    "A",
+    "B"
+  ],
+  "classification": "CROSS_SESSION_DISPLAY_OBSERVED",
+  "evidence": [
+    "DISPLAY_OR_PRICE_CHANGED_WITHIN_SESSION",
+    "SEPARATE_SESSION_OBSERVATION_RECORDED",
+    "TURKISH_STORE_AND_CURRENCY_OBSERVED",
+    "TURKISH_DISPLAY_REPEATED_ACROSS_SESSIONS"
+  ],
+  "limitations": [
+    "هذه ملاحظات يدوّنها المستخدم، وليست إثباتاً من API مستقل.",
+    "توافق العملة والسعر لا يثبت تعديل user_region أو قبول الدفع."
+  ],
+  "user_region_mutation_verified": false,
+  "turkish_purchase_eligibility_verified": false,
+  "operation_performed": false
+}
